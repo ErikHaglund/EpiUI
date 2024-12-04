@@ -20,7 +20,8 @@ const choosewrapper = {
 
 const experimentOptions = {
     maxWidth: '70%',
-    marginLeft: '150px',
+    marginLeft: 'auto',
+    marginRight: 'auto',
     paddingTop: '30px'
 }
 
@@ -183,7 +184,7 @@ class ExpEyeColor extends React.Component{
                     </div>
 
                     <div style={buttonWrapper}>
-                        <button style={buttonRed} onClick={(e) => this.exitExperiment(e)} type="submit" className="btn">Avbryt</button>
+                        <button style={buttonRed}  onClick={(e) => window.location.href = "http://localhost:3000/"} className="btn btn-primary">Avsluta</button>
                         <Button style={chooseButton} disabled={this.disableButton()} onClick={(e) => this.handleClick(e, '/Result')} type="submit" className="btn btn-primary button-next">Nästa</Button>
                     </div>
                     {/* <div className="experiment-image">

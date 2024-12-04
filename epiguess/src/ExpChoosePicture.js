@@ -5,42 +5,8 @@ import {Carousel} from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import $ from 'jquery';
 
+
 const images = [
-    {
-        id: 124664646,
-        original: '/images/landscape.jpg',
-        thumbnail: '/images/landscape.jpg',
-      },
-      {
-        id: 1436436,
-        original: '/images/EpiImage.jpg',
-        thumbnail: '/images/EpiImage.jpg',
-      },
-      {
-        id: 164363,
-        original: '/images/EpiImage2.jpg',
-        thumbnail: '/images/EpiImage2.jpg',
-      },
-      {
-        id: 1344,
-        original: '/images/EpiImage3.jpg',
-        thumbnail: '/images/EpiImage.jpg',
-      },
-      {
-        id: 1456,
-        original: '/images/EpiImage4.jpg',
-        thumbnail: '/images/EpiImage4.jpg',
-      },
-      {
-        id: 1345,
-        original: '/images/EpiImage5.jpg',
-        thumbnail: '/images/EpiImage5.jpg',
-      },
-      {
-        id: 145,
-        original: '/images/EpiImage.jpg',
-        thumbnail: '/images/EpiImage6.jpg',
-      },
     {
       id: 1,
       original: '/images/anger1.jpg',
@@ -62,11 +28,11 @@ const images = [
         original: '/images/anger4.jpg',
         thumbnail: '/images/anger4.jpg',
     },
-    {
-        id: 5,
-        original: '/images/stock_disgusted2.jpg',
-        thumbnail: '/images/stock_disgusted2.jpg',
-    },
+    // {
+    //     id: 5,
+    //     original: '/images/stock_disgusted2.jpg',
+    //     thumbnail: '/images/stock_disgusted2.jpg',
+    // },
     {
         id: 6,
         original: '/images/disgust1.jpg',
@@ -123,11 +89,11 @@ const images = [
         original: '/images/surprise1.jpg',
         thumbnail: '/images/surprise1.jpg',
     },
-    {
-        id: 16,
-        original: '/images/surprise2.jpg',
-        thumbnail: '/images/surprise2.jpg',
-    },
+    // {
+    //     id: 16,
+    //     original: '/images/surprise2.jpg',
+    //     thumbnail: '/images/surprise2.jpg',
+    // },
     {
         id: 16,
         original: '/images/surprise3.jpg',
@@ -176,7 +142,7 @@ class ExpChoosePicture extends React.Component{
 
     render() {
         return (
-            <div>
+            <div style={{maxWidth : '80%', marginLeft : 'auto',marginRight : 'auto' }} >
                 <div className="CarouselWrapper">
                     <Carousel swipeable={true} showArrows={true}>
                         {images.map((image, index) => {
